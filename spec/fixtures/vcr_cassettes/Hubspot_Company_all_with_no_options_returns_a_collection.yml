@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/companies/v2/companies/paged?hapikey=<HAPI_KEY>&limit=25&offset=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddb30e9ab3a951ae2dbdfe79d8f3870831556981039; expires=Sun, 03-May-20
+        14:43:59 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B34C83797DDDEE19CCBC7425489A2617D2D751579000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979530'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '57'
+      Vary:
+      - Accept-Encoding, User-Agent
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b40089f4e9f82-IAD
+    body:
+      encoding: UTF-8
+      string: '{"has-more":true,"offset":176188283,"companies":[{"portalId":62515,"companyId":117000761,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":117000781,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":117000786,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":117000791,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":117000796,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":140582554,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":141226018,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":141226023,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":142226976,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145334359,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145334389,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145335704,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145335709,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145335714,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145335719,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":145335724,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":147652528,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":148476947,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":154479566,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":159625052,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":160790833,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":166480524,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":175020608,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":175022843,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":176188283,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:04 GMT
+recorded_with: VCR 4.0.0

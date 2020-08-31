@@ -1,0 +1,213 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/properties/v1/companies/properties?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"name":"instagram_handle","groupName":"socialmediainformation","description":"The
+        company''s Instagram handle.","fieldType":"text","type":"string","label":"Instagram
+        Handle","options":[]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:28:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '806'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd1600c1d60bc199a97b4542cfdd62bec1544646503; expires=Thu, 12-Dec-19
+        20:28:23 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BD8FD2256647A2A6012499B4637C3B5D0AE86A4EC000000000000000000
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882efe92948ae32-BOS
+    body:
+      encoding: UTF-8
+      string: '{"name":"instagram_handle","label":"Instagram Handle","description":"The
+        company''s Instagram handle.","groupName":"socialmediainformation","type":"string","fieldType":"text","options":[],"hidden":false,"showCurrencySymbol":null,"deleted":false,"createdAt":1544544451947,"hubspotDefined":null,"formField":false,"displayOrder":0,"readOnlyValue":false,"readOnlyDefinition":false,"mutableDefinitionNotDeletable":false,"favorited":false,"favoritedOrder":-1,"calculated":false,"externalOptions":false,"displayMode":"current_value","createdUserId":null,"textDisplayHint":null,"numberDisplayHint":null,"optionsAreMutable":null,"referencedObjectType":null,"updatedAt":1544646503913,"isCustomizedDefault":false,"searchableInGlobalSearch":false,"currencyPropertyName":null,"hasUniqueValue":false,"updatedUserId":null}'
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:28:23 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/properties/v1/companies/properties?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"name":"fax_number","groupName":"companyinformation","description":"The
+        company fax number.","fieldType":"text","type":"string","label":"Fax Number","options":[]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:28:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '783'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d09fc22e1d7461f09f4848c9c6a99a8cd1544646504; expires=Thu, 12-Dec-19
+        20:28:24 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B5763CC698045A87D5504466E080B9007A087E76B000000000000000000
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882efea5996ae02-BOS
+    body:
+      encoding: UTF-8
+      string: '{"name":"fax_number","label":"Fax Number","description":"The company
+        fax number.","groupName":"companyinformation","type":"string","fieldType":"text","hidden":false,"options":[],"calculated":false,"hubspotDefined":null,"readOnlyDefinition":false,"readOnlyValue":false,"deleted":false,"createdAt":1544542448040,"formField":false,"displayOrder":-1,"mutableDefinitionNotDeletable":false,"favorited":false,"favoritedOrder":-1,"externalOptions":false,"displayMode":"current_value","showCurrencySymbol":null,"createdUserId":null,"textDisplayHint":null,"numberDisplayHint":null,"optionsAreMutable":null,"referencedObjectType":null,"updatedAt":1544646504095,"isCustomizedDefault":false,"searchableInGlobalSearch":false,"currencyPropertyName":null,"hasUniqueValue":false,"updatedUserId":null}'
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:28:24 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/properties/v1/companies/groups?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:28:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df077baab33fe7f8063e3855783bcbc011544646504; expires=Thu, 12-Dec-19
+        20:28:24 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B9401F43AF27A2E1DB2C3DFFF8AD383986EF1503E000000000000000000
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882efeb8942ae44-BOS
+    body:
+      encoding: UTF-8
+      string: '[{"name":"companyinformation","displayName":"Company Information","displayOrder":1,"hubspotDefined":true},{"name":"socialmediainformation","displayName":"Social
+        Media Information","displayOrder":2,"hubspotDefined":true},{"name":"analyticsinformation","displayName":"Web
+        Analytics History","displayOrder":4,"hubspotDefined":true},{"name":"conversioninformation","displayName":"Conversion
+        Information","displayOrder":5,"hubspotDefined":true},{"name":"group awesome","displayName":"","displayOrder":6,"hubspotDefined":false}]'
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:28:24 GMT
+- request:
+    method: delete
+    uri: https://api.hubapi.com/properties/v1/companies/properties/named/instagram_handle?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:28:24 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8ba63a7dab54ced6a5ff21bb957559281544646504; expires=Thu, 12-Dec-19
+        20:28:24 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B16DEDDFDC199503A409188A9355F0771E025BD6C000000000000000000
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882efec2ab1ae38-BOS
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:28:24 GMT
+- request:
+    method: delete
+    uri: https://api.hubapi.com/properties/v1/companies/properties/named/fax_number?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:28:24 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3999f06e781d93df7fc0a1753a7c1af71544646504; expires=Thu, 12-Dec-19
+        20:28:24 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BE2C14551930C5BA27BE4DBF4A23B9D48460A002E000000000000000000
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882efed3cf75a32-BOS
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:28:24 GMT
+recorded_with: VCR 4.0.0

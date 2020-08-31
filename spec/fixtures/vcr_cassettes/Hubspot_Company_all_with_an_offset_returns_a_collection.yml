@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/companies/v2/companies/?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"name":"name","value":"Feest, Kiehn and Runolfsdottir"},{"name":"domain","value":"fritsch.biz"}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9fcfd8ec6d21a6b9ffb4c3bde75268c71556981049; expires=Sun, 03-May-20
+        14:44:09 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BB3D5E5FD794B0A93A6AA0FD86D7E4EA909890107000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979525'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b404a7878c1bb-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1896332004,"isDeleted":false,"properties":{"website":{"value":"fritsch.biz","timestamp":1556981050015,"source":"CALCULATED","sourceId":null,"versions":[{"name":"website","value":"fritsch.biz","timestamp":1556981050015,"source":"CALCULATED","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"}]},"hs_lastmodifieddate":{"value":"1556981050015","timestamp":1556981050015,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981050015","timestamp":1556981050015,"source":"CALCULATED","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"}]},"domain":{"value":"fritsch.biz","timestamp":1556981050015,"source":"API","sourceId":null,"versions":[{"name":"domain","value":"fritsch.biz","timestamp":1556981050015,"source":"API","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"}]},"name":{"value":"Feest,
+        Kiehn and Runolfsdottir","timestamp":1556981050015,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Feest,
+        Kiehn and Runolfsdottir","timestamp":1556981050015,"source":"API","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"}]},"createdate":{"value":"1556981050015","timestamp":1556981050015,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981050015","timestamp":1556981050015,"source":"API","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"},{"name":"createdate","value":"1556981050015","timestamp":1556981050015,"sourceId":"API","source":"API","sourceVid":[],"requestId":"5d82f736-cd6c-42e0-acc6-8b83c4edf900"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:10 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/companies/v2/companies/paged?hapikey=<HAPI_KEY>&limit=25&offset=1896332004
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddacd2cfa0e0d208be78611d935e110551556981051; expires=Sun, 03-May-20
+        14:44:11 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B1963FECB49DB8956555F98B62F7E9C39476B2892000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979524'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Vary:
+      - Accept-Encoding, User-Agent
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b40526e56cec8-IAD
+    body:
+      encoding: UTF-8
+      string: '{"has-more":true,"offset":1897430240,"companies":[{"portalId":62515,"companyId":1896382433,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382434,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382508,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382530,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382531,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382701,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896382703,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896421502,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896421526,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896421662,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896421663,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1896421689,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897399905,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897399909,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897399910,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897399912,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897400096,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897429954,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897429955,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430034,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430035,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430036,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430041,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430239,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]},{"portalId":62515,"companyId":1897430240,"isDeleted":false,"properties":{},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:11 GMT
+recorded_with: VCR 4.0.0

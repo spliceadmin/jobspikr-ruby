@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/companies/v2/companies/?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"name":"name","value":"Foo Bar Inc."}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:43:57 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d001902e7ae7f7e11ffa7553959fbc7701556981037; expires=Sun, 03-May-20
+        14:43:57 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B4E2E2C5860F57D5274847B464FE9013DA430594A000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979541'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b3ff94ccdcec4-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1896332000,"isDeleted":false,"properties":{"hs_lastmodifieddate":{"value":"1556981037033","timestamp":1556981037033,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981037033","timestamp":1556981037033,"source":"CALCULATED","sourceVid":[],"requestId":"33b2536e-0795-4944-81ce-3b16728235d1"}]},"name":{"value":"Foo
+        Bar Inc.","timestamp":1556981037033,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Foo
+        Bar Inc.","timestamp":1556981037033,"source":"API","sourceVid":[],"requestId":"33b2536e-0795-4944-81ce-3b16728235d1"}]},"createdate":{"value":"1556981037033","timestamp":1556981037033,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981037033","timestamp":1556981037033,"source":"API","sourceVid":[],"requestId":"33b2536e-0795-4944-81ce-3b16728235d1"},{"name":"createdate","value":"1556981037033","timestamp":1556981037033,"sourceId":"API","source":"API","sourceVid":[],"requestId":"33b2536e-0795-4944-81ce-3b16728235d1"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:43:57 GMT
+recorded_with: VCR 4.0.0

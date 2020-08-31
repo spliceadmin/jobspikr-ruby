@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"email","value":"xyak81074@example.net"}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:34 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3f24ea8de2cd435dc4b3f66e6f4e03051556981074; expires=Sun, 03-May-20
+        14:44:34 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BBD76D600323C77A233FD290FAC79132AD6849426000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979473'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '57'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b40e40dbacec4-IAD
+    body:
+      encoding: UTF-8
+      string: '{"vid":12053275,"canonical-vid":12053275,"merged-vids":[],"portal-id":62515,"is-contact":true,"profile-token":"AO_T-mN1e6MQsIOjbF1SbrDlysA1mIDrq5XB6ZSjPXG0_E86Tq9hwZgnpOhvSikhZRorhxPsG_vT3b52Pj_ctFAm_H82sT4BRZ3v9uMwVZYLxmxdZ0lbKevoNs95vF4W9NmaG_8djfj4","profile-url":"https://app.hubspot.com/contacts/62515/contact/12053275","properties":{"email":{"value":"xyak81074@example.net","versions":[{"value":"xyak81074@example.net","source-type":"API","source-id":null,"source-label":null,"timestamp":1556981074594,"selected":false}]}},"form-submissions":[],"list-memberships":[],"identity-profiles":[{"vid":12053275,"is-deleted":false,"is-contact":false,"pointer-vid":0,"previous-vid":0,"linked-vids":[],"saved-at-timestamp":0,"deleted-changed-timestamp":0,"identities":[{"type":"EMAIL","value":"xyak81074@example.net","timestamp":1556981074598,"is-primary":true,"source":"UNSPECIFIED"},{"type":"LEAD_GUID","value":"81d56379-65fe-40cc-b1a4-0ac1a5442733","timestamp":1556981074610,"source":"UNSPECIFIED"}]}],"merge-audits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:34 GMT
+recorded_with: VCR 4.0.0

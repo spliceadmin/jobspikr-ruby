@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/companies/v2/companies/?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"name":"name","value":"Feeney-Torp"},{"name":"domain","value":"stiedemannbechtelar.org"}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:43:54 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4e30a7fe77e67ca16e4fa8ca3d623de01556981034; expires=Sun, 03-May-20
+        14:43:54 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B7F8C3AB721F8C7C1793EEE6775D1DDF69F0CB383000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979545'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '56'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b3febe8439fbe-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1897400096,"isDeleted":false,"properties":{"website":{"value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"CALCULATED","sourceId":null,"versions":[{"name":"website","value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"CALCULATED","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"hs_lastmodifieddate":{"value":"1556981034894","timestamp":1556981034894,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981034894","timestamp":1556981034894,"source":"CALCULATED","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"domain":{"value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"domain","value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"name":{"value":"Feeney-Torp","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Feeney-Torp","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"createdate":{"value":"1556981034894","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981034894","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"},{"name":"createdate","value":"1556981034894","timestamp":1556981034894,"sourceId":"API","source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:43:54 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/companies/v2/companies/1897400096?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:43:56 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d79dd73928816057cac50944e7da775f31556981036; expires=Sun, 03-May-20
+        14:43:56 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B3953120764EA3E501120C12BCF0DA3F5AAE6F6B0000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979544'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Vary:
+      - Accept-Encoding, User-Agent
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b3ff45d45cf00-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1897400096,"isDeleted":false,"properties":{"website":{"value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"CALCULATED","sourceId":null,"versions":[{"name":"website","value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"CALCULATED","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"hs_lastmodifieddate":{"value":"1556981034894","timestamp":1556981034894,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981034894","timestamp":1556981034894,"source":"CALCULATED","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"domain":{"value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"domain","value":"stiedemannbechtelar.org","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"name":{"value":"Feeney-Torp","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Feeney-Torp","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]},"createdate":{"value":"1556981034894","timestamp":1556981034894,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981034894","timestamp":1556981034894,"source":"API","sourceVid":[],"requestId":"10696545-5fad-4012-ab4f-5d86790f5c5f"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:43:56 GMT
+recorded_with: VCR 4.0.0

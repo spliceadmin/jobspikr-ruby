@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.hubapi.com/properties/v1/companies/properties/named/non-existent?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 12 Dec 2018 20:08:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '90'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d590089625fa7efbb3d64d431eefa65231544645302; expires=Thu, 12-Dec-19
+        20:08:22 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B27C4CEE0813171055D33701AAE5DD6881C6AEA47000000000000000000
+      X-Hubspot-Notfound:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4882d2955defae32-BOS
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"Couldn''t find a Property with the given
+        name ''non-existent''"}'
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 20:08:22 GMT
+recorded_with: VCR 4.0.0

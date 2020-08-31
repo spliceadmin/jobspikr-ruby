@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/companies/v2/groups?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"name":"group_awesome"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Dec 2018 19:30:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '60'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5272ec2cb26d229a8b114f774b9af5ad1544556625; expires=Wed, 11-Dec-19
+        19:30:25 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B7974C14C9C3ED4B0C0ABBF8C96D05F5018DA1B17000000000000000000
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 487a5d9bbca5ae3e-BOS
+    body:
+      encoding: UTF-8
+      string: '{"portalId":5229865,"name":"group_awesome","displayOrder":7}'
+    http_version: 
+  recorded_at: Tue, 11 Dec 2018 19:30:25 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/properties/v1/companies/groups?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Dec 2018 19:30:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d37f7f6a81ae65f1d2576b8a960e31cee1544556625; expires=Wed, 11-Dec-19
+        19:30:25 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B89EFAE276D5DB3211E1F053A15727810A231E3A9000000000000000000
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 487a5d9c9be5ae02-BOS
+    body:
+      encoding: UTF-8
+      string: '[{"name":"companyinformation","displayName":"Company Information","displayOrder":1,"hubspotDefined":true},{"name":"socialmediainformation","displayName":"Social
+        Media Information","displayOrder":2,"hubspotDefined":true},{"name":"analyticsinformation","displayName":"Web
+        Analytics History","displayOrder":4,"hubspotDefined":true},{"name":"conversioninformation","displayName":"Conversion
+        Information","displayOrder":5,"hubspotDefined":true},{"name":"group awesome","displayName":"","displayOrder":6,"hubspotDefined":false},{"name":"group_awesome","displayName":"","displayOrder":7,"hubspotDefined":false}]'
+    http_version: 
+  recorded_at: Tue, 11 Dec 2018 19:30:25 GMT
+- request:
+    method: delete
+    uri: https://api.hubapi.com/properties/v1/companies/groups/named/group_awesome?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Tue, 11 Dec 2018 19:30:25 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d52604eb4ea2155e89c9bfc5c22982c3c1544556625; expires=Wed, 11-Dec-19
+        19:30:25 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B8A157CCF49FB92995706A9621139D15F3DCB6A0E000000000000000000
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 487a5d9d4cf8ae20-BOS
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 11 Dec 2018 19:30:25 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"firstname","value":"Vanda"},{"property":"lastname","value":"Ward"},{"property":"email","value":"81085mqav@example.com"}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:46 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddc3e69f96dbe7c42917b5b0ba1356f721556981085; expires=Sun, 03-May-20
+        14:44:45 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BB9BB1E689D4CB55E97EB924BD6961FF2DC89D1E6000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979450'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '58'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b412aba46c1c0-IAD
+    body:
+      encoding: UTF-8
+      string: '{"vid":12053874,"canonical-vid":12053874,"merged-vids":[],"portal-id":62515,"is-contact":true,"profile-token":"AO_T-mOTKpuvS8J0NtPac2STevlP_MFKA0V_JETU8kdj8SX94mq5wyzP1KDLCAiUX1-WEc9zxu4rj8giIsq8HDaOTI6Dv-_nagG0gw4F2DRdohVNj0B_CpCbn55A_mL9Acnax9YkOkOC","profile-url":"https://app.hubspot.com/contacts/62515/contact/12053874","properties":{"firstname":{"value":"Vanda","versions":[{"value":"Vanda","source-type":"API","source-id":null,"source-label":null,"timestamp":1556981085897,"selected":false}]},"email":{"value":"81085mqav@example.com","versions":[{"value":"81085mqav@example.com","source-type":"API","source-id":null,"source-label":null,"timestamp":1556981085897,"selected":false}]},"lastname":{"value":"Ward","versions":[{"value":"Ward","source-type":"API","source-id":null,"source-label":null,"timestamp":1556981085897,"selected":false}]}},"form-submissions":[],"list-memberships":[],"identity-profiles":[{"vid":12053874,"is-deleted":false,"is-contact":false,"pointer-vid":0,"previous-vid":0,"linked-vids":[],"saved-at-timestamp":0,"deleted-changed-timestamp":0,"identities":[{"type":"EMAIL","value":"81085mqav@example.com","timestamp":1556981085902,"is-primary":true,"source":"UNSPECIFIED"},{"type":"LEAD_GUID","value":"18bc10b6-0991-415f-9696-bea3797e82f3","timestamp":1556981085911,"source":"UNSPECIFIED"}]}],"merge-audits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:46 GMT
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/merge-vids/12053874/?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"vidToMerge":1}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:44:47 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4b4ac3887a2c620d70c6b6caaf6a0b331556981087; expires=Sun, 03-May-20
+        14:44:47 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B63402CCAA83E186C8CAE9A7F3EFFE5953CC86F22000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979449'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b4133eabacedc-IAD
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","message":"vid to merge is not a valid contact or
+        is already in the process of being merged","correlationId":"9d5a04b7-c40a-4317-afa7-aa1645738bbb","requestId":"d4d332e220109e6f4daeea29003f9cb8"}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:44:47 GMT
+recorded_with: VCR 4.0.0

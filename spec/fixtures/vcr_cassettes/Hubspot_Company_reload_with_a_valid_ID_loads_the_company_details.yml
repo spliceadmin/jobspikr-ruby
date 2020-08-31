@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/companies/v2/companies/?hapikey=<HAPI_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"name":"name","value":"Terry-Rau"},{"name":"domain","value":"waters.net"}]}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:43:58 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc2432f2e6e935b7384986b490085d2d91556981037; expires=Sun, 03-May-20
+        14:43:57 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2BA400A17B3B5927F166144E71CD793EEABCB3A234000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979537'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '55'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b3ffefe999f82-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1897430240,"isDeleted":false,"properties":{"website":{"value":"waters.net","timestamp":1556981037942,"source":"CALCULATED","sourceId":null,"versions":[{"name":"website","value":"waters.net","timestamp":1556981037942,"source":"CALCULATED","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"hs_lastmodifieddate":{"value":"1556981037942","timestamp":1556981037942,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981037942","timestamp":1556981037942,"source":"CALCULATED","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"domain":{"value":"waters.net","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"domain","value":"waters.net","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"name":{"value":"Terry-Rau","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Terry-Rau","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"createdate":{"value":"1556981037942","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981037942","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"},{"name":"createdate","value":"1556981037942","timestamp":1556981037942,"sourceId":"API","source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:43:58 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/companies/v2/companies/1897430240?hapikey=<HAPI_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 14:43:58 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dac2e41f10a72ebc606e3327d000b431c1556981038; expires=Sun, 03-May-20
+        14:43:58 GMT; path=/; domain=.hubapi.com; HttpOnly
+      X-Trace:
+      - 2B3610B7607B08CCFD79A3FDDDFA5B26C7A3E428DF000000000000000000
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '979536'
+      X-Hubspot-Ratelimit-Secondly:
+      - '60'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '59'
+      Vary:
+      - Accept-Encoding, User-Agent
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1b40004ed0243c-IAD
+    body:
+      encoding: UTF-8
+      string: '{"portalId":62515,"companyId":1897430240,"isDeleted":false,"properties":{"website":{"value":"waters.net","timestamp":1556981037942,"source":"CALCULATED","sourceId":null,"versions":[{"name":"website","value":"waters.net","timestamp":1556981037942,"source":"CALCULATED","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"hs_lastmodifieddate":{"value":"1556981037942","timestamp":1556981037942,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1556981037942","timestamp":1556981037942,"source":"CALCULATED","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"domain":{"value":"waters.net","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"domain","value":"waters.net","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"name":{"value":"Terry-Rau","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"name","value":"Terry-Rau","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]},"createdate":{"value":"1556981037942","timestamp":1556981037942,"source":"API","sourceId":null,"versions":[{"name":"createdate","value":"1556981037942","timestamp":1556981037942,"source":"API","sourceVid":[],"requestId":"f8ef44a4-930f-4d7b-9744-9c425ea411c8"}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 14:43:58 GMT
+recorded_with: VCR 4.0.0
