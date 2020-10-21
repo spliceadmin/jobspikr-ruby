@@ -13,9 +13,9 @@ require "byebug"
 # require "pry"
 # Pry.start
 
-# Configure with the demo key by default
+# Configure with the sandbox url
 Jobspikr.configure({
-  base_url: "https://api-bcp.jobspikr.com/v2",
+  base_url: "https://api.jobspikr.com/sandbox/v2",
 })
 
 require "irb"

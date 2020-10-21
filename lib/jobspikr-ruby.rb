@@ -1,6 +1,7 @@
 require 'active_support'
 require 'active_support/core_ext'
 require 'httparty'
+require 'jobspikr/resource'
 require 'jobspikr/collection'
 require 'jobspikr/paged_collection'
 require 'jobspikr/config'

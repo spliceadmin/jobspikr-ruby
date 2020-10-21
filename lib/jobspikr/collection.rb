@@ -1,4 +1,4 @@
-class Jopspikr::Collection
+class Jobspikr::Collection
   def initialize(opts = {}, &block)
     @options = opts
     @fetch_proc = block
