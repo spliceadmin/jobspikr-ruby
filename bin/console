@@ -14,9 +14,9 @@ require "byebug"
 # Pry.start
 
 # Configure with the demo key by default
-JobsPikr.configure({
+Jobspikr.configure({
   base_url: "https://api-bcp.jobspikr.com/v2",
-}
+})
 
 require "irb"
 IRB.start(__FILE__)

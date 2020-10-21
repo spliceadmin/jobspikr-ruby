@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.3"
 
   # Add runtime dependencies here
-  s.add_runtime_dependency "activesupport", ">= 4.2.2"
+  s.add_runtime_dependency "activesupport", ">= 5.1"
   s.add_runtime_dependency "httparty", ">= 0.10"
 
   # Add development-only dependencies here

@@ -1,6 +1,6 @@
 module JobspikrApiHelpers
   def jobspikr_api_url(path)
-    URI.join(JobsPikr::Config.base_url, path)
+    URI.join(Jobspikr::Config.base_url, path)
   end
 
   def assert_jobspikr_api_request(method, path, options = {})

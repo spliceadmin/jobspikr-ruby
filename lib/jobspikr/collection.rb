@@ -1,4 +1,4 @@
-class Hubspot::Collection
+class Jopspikr::Collection
   def initialize(opts = {}, &block)
     @options = opts
     @fetch_proc = block
@@ -12,18 +12,6 @@ class Hubspot::Collection
 
   def resources
     @resources
-  end
-
-  def update_all(opts = {})
-    return true if empty?
-
-    # This assumes that all resources are the same type
-    resource_class = resources.first.class
-    unless resource_class.respond_to?(:batch_update)
-      raise "#{resource_class} does not support bulk update"
-    end
-
-    resource_class.batch_update(resources, opts)
   end
 
 protected

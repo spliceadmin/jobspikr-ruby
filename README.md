@@ -18,7 +18,7 @@ gem "jobspikr-ruby"
 
 Below is a complete list of configuration options with the default values:
 ```ruby
-JobsPikr.configure({
+Jobspikr.configure({
   base_url: "https://api.jobspikr.com/v2",
   logger: Logger.new(nil),
   client_id: <JOBSPIKR_CLIENT_ID>,
