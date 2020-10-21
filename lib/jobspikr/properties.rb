@@ -1,8 +1,7 @@
-module Hubspot
+module Jobspikr
   class Properties
 
     PROPERTY_SPECS = {
-      group_field_names: %w(name displayName displayOrder properties),
       field_names:       %w(name groupName description fieldType formField type displayOrder label options showCurrencySymbol),
       valid_field_types: %w(textarea select text date file number radio checkbox booleancheckbox),
       valid_types:       %w(string number bool date datetime enumeration),
@@ -19,50 +18,6 @@ module Hubspot
         else
           opts.merge(property: DEFAULT_PROPERTY)
         end
-      end
-
-      def all(path, opts={}, filter={})
-        response = Hubspot::Connection.get_json(path, opts)
-        filter_results(response, :groupName, filter[:include], filter[:exclude])
-      end
-
-      def groups(path, opts={}, filter={})
-        response = Hubspot::Connection.get_json(path, opts)
-        filter_results(response, :name, filter[:include], filter[:exclude])
-      end
-
-      def create!(path, params={})
-        post_data = valid_property_params(params)
-        return nil if post_data.blank?
-        Hubspot::Connection.post_json(path, params: {}, body: post_data)
-      end
-
-      def update!(path, property_name, params={})
-        post_data = valid_property_params(params)
-        return nil if post_data.blank?
-        Hubspot::Connection.put_json(path, params: { property_name: property_name }, body: post_data)
-      end
-
-      def delete!(path, property_name)
-        response = Hubspot::Connection.delete_json(path, property_name: property_name)
-        response.parsed_response
-      end
-
-      def create_group!(path, params={})
-        post_data = valid_group_params(params)
-        return nil if post_data.blank?
-        Hubspot::Connection.post_json(path, params: {}, body: post_data)
-      end
-
-      def update_group!(path, group_name, params={})
-        post_data = valid_group_params(params)
-        return nil if post_data.blank?
-        Hubspot::Connection.put_json(path, params: { group_name: group_name }, body: post_data)
-      end
-
-      def delete_group!(path, group_name)
-        response = Hubspot::Connection.delete_json(path, group_name: group_name)
-        response.parsed_response
       end
 
       def same?(src, dst)
@@ -92,13 +47,6 @@ module Hubspot
         result.delete('fieldType') unless check_field_type(result['fieldType'])
         result.delete('type') unless check_type(result['type'])
         result['options'] = valid_option_params(result['options'])
-        result
-      end
-
-      def valid_group_params(params)
-        return {} if params.blank?
-        result = params.slice(*PROPERTY_SPECS[:group_field_names])
-        result['properties'] = valid_property_params(result['properties']) unless result['properties'].blank?
         result
       end
 

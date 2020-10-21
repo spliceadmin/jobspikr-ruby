@@ -1,4 +1,4 @@
-class Jobspikr::PagedCollection < Hubspot::Collection
+class Jobspikr::PagedCollection < Jobspikr::Collection
   attr_accessor :cursor, :limit
 
   def initialize(opts = {}, &block)

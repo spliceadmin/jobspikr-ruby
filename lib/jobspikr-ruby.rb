@@ -1,11 +1,10 @@
 require 'active_support'
 require 'active_support/core_ext'
 require 'httparty'
-#require 'jobspikr/collection'
-#require 'jobspikr/paged_collection'
-#require 'jobspikr/properties'
+require 'jobspikr/collection'
+require 'jobspikr/paged_collection'
 require 'jobspikr/config'
-#require 'jobspikr/connection'
+require 'jobspikr/connection'
 
 module Jobspikr
  def self.configure(config={})

@@ -1,5 +1,4 @@
-
-RSpec.describe Hubspot::Resource do
+RSpec.describe Jobspikr::Resource do
   describe '#new' do
     context 'when specifying an ID' do
       let(:id) { 1 }

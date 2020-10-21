@@ -1,2 +1,2 @@
 #!/bin/bash
-./scripts/docker/run 'rails console'
+./scripts/docker/run 'bin/console'

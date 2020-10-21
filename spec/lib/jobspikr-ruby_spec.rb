@@ -1,12 +1,12 @@
-RSpec.describe Hubspot do
+RSpec.describe Jobspikr do
   describe ".configure" do
-    it "delegates .configure to Hubspot::Config.configure" do
+    it "delegates .configure to Jobspikr::Config.configure" do
       options = { hapikey: "demo" }
-      allow(Hubspot::Config).to receive(:configure).with(options)
+      allow(Jobspikr::Config).to receive(:configure).with(options)
 
-      Hubspot.configure(options)
+      Jobspikr.configure(options)
 
-      expect(Hubspot::Config).to have_received(:configure).with(options)
+      expect(Jobspikr::Config).to have_received(:configure).with(options)
     end
   end
 end

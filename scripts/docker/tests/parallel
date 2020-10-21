@@ -1,2 +1,0 @@
-#!/bin/bash
-./scripts/docker/run "rails parallel:prepare[$(nproc)] && rails parallel:spec"
