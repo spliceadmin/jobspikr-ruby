@@ -7,7 +7,7 @@ module Jobspikr
       :base_url, :logger, :client_id, :client_auth_key, :read_timeout, :open_timeout
     ]
     DEFAULT_LOGGER = Logger.new(nil)
-    DEFAULT_BASE_URL = "https://api.jobspikr.com/".freeze
+    DEFAULT_BASE_URL = "https://api.jobspikr.com".freeze
 
     class << self
       attr_accessor *CONFIG_KEYS

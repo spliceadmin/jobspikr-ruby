@@ -1,7 +1,9 @@
-class Jobspikr::JobData < Jobspikr::Resource
+class Jobspikr::JobSearch < Jobspikr::Resource
   PATH = "/v2/data"
+  self.resource_field = "job_data"
 
   class << self
+
     def search(opts = {})
       Jobspikr::PagedCollection.new(opts) do |options, offset, limit|
         Jobspikr::Config.logger.info("opts: #{opts}")
