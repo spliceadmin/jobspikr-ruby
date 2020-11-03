@@ -1,6 +1,8 @@
 class Jobspikr::Collection
-  def initialize(opts = {}, &block)
-    @options = opts
+  attr_accessor :query, :resources
+
+  def initialize(query = {}, &block)
+    @query = query
     @fetch_proc = block
     fetch
   end
@@ -10,13 +12,9 @@ class Jobspikr::Collection
     self
   end
 
-  def resources
-    @resources
-  end
-
 protected
   def fetch
-    @resources = @fetch_proc.call(@options)
+    @resources = @fetch_proc.call(@query)
   end
 
   def respond_to_missing?(name, include_private = false)

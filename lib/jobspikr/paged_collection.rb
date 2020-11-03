@@ -1,24 +1,18 @@
 class Jobspikr::PagedCollection < Jobspikr::Collection
-  attr_accessor :cursor, :limit
+  attr_accessor :cursor, :next_cursor
 
-  def initialize(opts = {}, &block)
-    @limit_param = opts.delete(:limit_param) || "limit"
-    @limit = opts.delete(:limit) || 25
-    @cursor = opts.delete(:cursor)
+  def initialize(query = {}, &block)
+    @cursor = query[:cursor]
 
-    super(opts, &block)
+    super(query, &block)
   end
 
   def more?
-    @has_more
-  end
-
-  def next_cursor
-    @next_cursor
+    @next_cursor.present?
   end
 
   def next_page?
-    @has_more
+    more?
   end
 
   def next_page
@@ -29,6 +23,6 @@ class Jobspikr::PagedCollection < Jobspikr::Collection
 
 protected
   def fetch
-    @resources, @next_cursor, @has_more = @fetch_proc.call(@options, @cursor, @limit)
+    @resources, @next_cursor = @fetch_proc.call(@query, @cursor)
   end
 end

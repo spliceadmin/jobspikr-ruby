@@ -11,9 +11,11 @@ module Jobspikr
         handle_response(response)
       end
 
-      def post_json(path, opts = { params: {}})
-        no_parse = opts[:params].delete(:no_parse) { false }
-
+      def post_json(path, opts = {})
+        opts[:params] ||= {}
+        no_parse = opts[:params][:no_parse] || false
+        body = opts[:body] || {}
+        body[:cursor] = opts[:cursor] || nil
         url = generate_url(path, opts[:params])
         response = post(
           url,
@@ -22,7 +24,7 @@ module Jobspikr
               username: Jobspikr::Config.client_id,
               password: Jobspikr::Config.client_auth_key,
             },
-            body: opts[:body].to_json,
+            body: body.to_json,
             headers: { 'Content-Type' => 'application/json' },
             format: :json,
             read_timeout: read_timeout(opts),
@@ -30,8 +32,8 @@ module Jobspikr
           }
         )
 
-        log_request_and_response url, response, opts[:body]
-        raise(Hubspot::RequestError.new(response)) unless response.success?
+        log_request_and_response(url, response, body)
+        raise(Jobspikr::RequestError.new(response)) unless response.success?
 
         no_parse ? response : response.parsed_response
       end
