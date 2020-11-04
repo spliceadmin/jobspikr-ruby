@@ -1,5 +1,5 @@
 class Jobspikr::Collection
-  attr_accessor :query, :resources
+  attr_accessor :query, :resources, :response
 
   def initialize(query = {}, &block)
     @query = query
@@ -14,7 +14,7 @@ class Jobspikr::Collection
 
 protected
   def fetch
-    @resources = @fetch_proc.call(@query)
+    @resources, @response = @fetch_proc.call(@query)
   end
 
   def respond_to_missing?(name, include_private = false)

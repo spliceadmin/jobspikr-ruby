@@ -8,21 +8,34 @@ class Jobspikr::PagedCollection < Jobspikr::Collection
   end
 
   def more?
-    @next_cursor.present?
-  end
-
-  def next_page?
-    more?
+    @response['next_cursor'].present? && @response['job_credit_remaining'] > 0
   end
 
   def next_page
-    @cursor = next_cursor
+    @cursor = @response['next_cursor']
     fetch
     self
   end
 
 protected
   def fetch
-    @resources, @next_cursor = @fetch_proc.call(@query, @cursor)
+    @resources, @response = @fetch_proc.call(@query, @cursor)
+  end
+
+  # Add custom methods for easily accessing response data
+  def response_methods
+    [:status, :total_count, :size, :job_credit_remaining]
+  end
+
+  def respond_to?(m, include_private = false)
+    response_methods.include?(m.to_sym) || super
+  end
+
+  def method_missing(m, *args, &block)
+    if response_methods.include?(m)
+      @response[m.to_s]
+    else
+      raise ArgumentError.new("Method `#{m}` doesn't exist.")
+    end
   end
 end
